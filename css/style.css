@@ -1,0 +1,260 @@
+@charset "UTF-8";
+* {
+  font-family: '微軟正黑體';
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold;
+}
+
+.navbar.navbar-expand-sm.fixed-top.navbar-dark {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navbar.navbar-expand-sm.fixed-top.navbar-dark a {
+  color: #fff;
+}
+
+.navbar.navbar-expand-sm.fixed-top.navbar-dark a:hover {
+  color: #C9ADD8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navbar.navbar-expand-sm.fixed-top.navbar-dark li {
+  margin-left: 10px;
+}
+
+.chang_color {
+  background-color: rgba(148, 140, 169, 0.8);
+}
+
+header.jumbotron {
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0% 100%;
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+header.jumbotron .container {
+  color: white;
+  padding: 300px 0px;
+  text-shadow: 0 0 10px #222;
+  letter-spacing: 1px;
+}
+
+header.jumbotron h5 {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: normal;
+}
+
+header.jumbotron h2 {
+  font-family: 'Sacramento';
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+header.jumbotron hr {
+  width: 45px;
+  border: solid 2px #C9ADD8;
+}
+
+#index {
+  background-image: url(http://oushidai.wangdk.cn/static/upload/2017/07/14/20170714210333000000_1_377706_11.jpg);
+}
+
+#mid {
+  background-image: url(https://i.pinimg.com/originals/0e/9e/c0/0e9ec0f858640a0821b3c13cc56d7918.jpg);
+  padding: 200px 0px;
+}
+
+section {
+  padding: 60px 0px;
+}
+
+section h1 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+section h4 {
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+section h5 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+section p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+section hr {
+  width: 45px;
+  border: solid 2px #C9ADD8;
+  margin-bottom: 20px;
+}
+
+section#section_legend {
+  background-color: #513B63;
+  color: #fff;
+}
+
+section#section_legend .col-md-5 {
+  background-image: url(https://inews.gtimg.com/newsapp_bt/0/4077947003/1000);
+  width: 100%;
+  height: 500px;
+  background-position: 13% center;
+  margin-bottom: 20px;
+}
+
+section#section_legend .col-md-7 {
+  padding: 0px 40px;
+}
+
+section#section_legend hr {
+  margin-left: 10px;
+}
+
+section#section_where {
+  text-align: center;
+}
+
+section#section_where .col-sm-12.map {
+  padding-bottom: 20px;
+  width: 250px;
+  top: -15px;
+}
+
+section#section_where .container-fluid:before {
+  content: "";
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1e/BlankMap-World-v4-Borders.png);
+  background-size: cover;
+  opacity: 0.15;
+  height: 450px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+  z-index: -1;
+}
+
+.img_warp {
+  width: 150px;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.img_warp img {
+  width: 250px;
+}
+
+section#section_purpose h1 {
+  text-align: center;
+}
+
+section#section_purpose p {
+  text-align: justify;
+  padding: 10px 15px;
+}
+
+section#section_purpose .img_warp {
+  border-radius: 10px;
+  width: 220px;
+  width: 250px;
+  left: -80px;
+  width: 250px;
+  left: -65px;
+}
+
+section#section_attractions {
+  background-color: #513B63;
+}
+
+section#section_attractions h1 {
+  text-align: center;
+  color: #fff;
+}
+
+section#section_attractions .imgwarp {
+  max-height: 400px;
+  height: 30%;
+  overflow: hidden;
+}
+
+section#section_attractions .imgwarp .text {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  color: #222;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(148, 140, 169, 0.6);
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+section#section_attractions .imgwarp .text hr {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  width: 40px;
+  border: solid 1.5px;
+}
+
+section#section_attractions .imgwarp .text p {
+  padding: 0;
+  margin: 0;
+}
+
+section#section_attractions .imgwarp .text:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
+  background-color: rgba(148, 140, 169, 0.8);
+}
+
+section#section_attractions .imgwarp .text:hover h5 {
+  color: #FFF4B7;
+}
+
+footer#question {
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed bottom;
+  background-position: 0 100%;
+  background-image: url(http://oushidai.wangdk.cn/static/upload/2017/07/14/20170714210333000000_1_377706_11.jpg);
+  padding: 80px 0px;
+  text-shadow: 0 0 10px #222;
+}
+
+footer#question input.form-control {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
