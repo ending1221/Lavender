@@ -17,25 +17,52 @@ $color_black: #222
     //   display: none
     // section#section_attractions
     //   display: block
+
+html,body 
+    margin: 0
   
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
     font-weight: bold
   
-.navbar.navbar-expand-sm.fixed-top.navbar-dark
+header.navbar
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    z-index: 1030
     transition: 0.5s
+    padding: 20px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    *
+        text-decoration: none
+
     a
         color: #fff
-    a:hover
-        color: $color_purple_1
+        text-shadow: 0 0 5px rgba(black,0.5)
         transition: 0.5s
+
+        &:hover
+            color: $color_purple_1
+            text-shadow: 0 0 10px rgba(white,0.5)
+
+    ul
+        padding: 0
+        margin: 0
+        display: flex
+        flex-wrap: nowrap
     li
+        list-style: none
         margin-left: 10px
+        
   
 .chang_color
     background-color: rgba($color_purple,0.8)  
 
 
-header.jumbotron
+.jumbotron
     text-align: center
     background-size: cover
     background-attachment: fixed
@@ -58,9 +85,9 @@ header.jumbotron
         width: 45px
         border: solid 2px $color_purple_1
     
-#index
+.jumbotron#index
     background-image: url(http://oushidai.wangdk.cn/static/upload/2017/07/14/20170714210333000000_1_377706_11.jpg)
-#mid
+.jumbotron#mid
     background-image: url(https://i.pinimg.com/originals/0e/9e/c0/0e9ec0f858640a0821b3c13cc56d7918.jpg)
     padding: 200px 0px
 
@@ -92,24 +119,29 @@ section
         border: solid 2px $color_purple_1
         margin-bottom: 20px
     
-section#section_legend
+section#Legend
     background-color: $color_purple_2
     color: #fff
-    .col-md-5
-        background-image: url(https://inews.gtimg.com/newsapp_bt/0/4077947003/1000)
-        width: 100%
-        height: 500px
-        background-position: 13% center
-        margin-bottom: 20px
-    .col-md-7
-        padding: 0px 40px
+    display: flex
+    align-items: self-start
+    .legend
+        &_Img
+            background-image: url(https://inews.gtimg.com/newsapp_bt/0/4077947003/1000)
+            flex: 5
+            min-height: 500px
+            background-position: 13% center
+            margin-bottom: 20px
+            margin-left: 40px
+        &_text
+            flex: 7
+            padding: 0px 40px
     hr
         margin-left: 10px
     
 
       
       
-section#section_where 
+section#Where 
     text-align: center
     .col-sm-12.map
         padding-bottom: 20px
@@ -141,7 +173,7 @@ section#section_where
     img
         width: 250px
       
-section#section_purpose
+section#Purpose
     h1
         text-align: center
     p
@@ -159,7 +191,7 @@ section#section_purpose
         left: -65px
 
 
-section#section_attractions
+section#Attractions
     background-color: $color_purple_2
     h1
         text-align: center
@@ -197,7 +229,7 @@ section#section_attractions
                 color: #FFF4B7
 
 
-footer#question
+footer#Question
     color: #fff
     text-align: center
     background-size: cover

@@ -4,26 +4,62 @@
   position: relative;
 }
 
+html, body {
+  margin: 0;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: bold;
 }
 
-.navbar.navbar-expand-sm.fixed-top.navbar-dark {
+header.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.navbar.navbar-expand-sm.fixed-top.navbar-dark a {
+header.navbar * {
+  text-decoration: none;
+}
+
+header.navbar a {
   color: #fff;
-}
-
-.navbar.navbar-expand-sm.fixed-top.navbar-dark a:hover {
-  color: #C9ADD8;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.navbar.navbar-expand-sm.fixed-top.navbar-dark li {
+header.navbar a:hover {
+  color: #C9ADD8;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+header.navbar ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+header.navbar li {
+  list-style: none;
   margin-left: 10px;
 }
 
@@ -31,7 +67,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   background-color: rgba(148, 140, 169, 0.8);
 }
 
-header.jumbotron {
+.jumbotron {
   text-align: center;
   background-size: cover;
   background-attachment: fixed;
@@ -40,34 +76,34 @@ header.jumbotron {
   border-radius: 0px;
 }
 
-header.jumbotron .container {
+.jumbotron .container {
   color: white;
   padding: 300px 0px;
   text-shadow: 0 0 10px #222;
   letter-spacing: 1px;
 }
 
-header.jumbotron h5 {
+.jumbotron h5 {
   color: rgba(255, 255, 255, 0.9);
   font-weight: normal;
 }
 
-header.jumbotron h2 {
+.jumbotron h2 {
   font-family: 'Sacramento';
   font-size: 42px;
   margin-bottom: 15px;
 }
 
-header.jumbotron hr {
+.jumbotron hr {
   width: 45px;
   border: solid 2px #C9ADD8;
 }
 
-#index {
+.jumbotron#index {
   background-image: url(http://oushidai.wangdk.cn/static/upload/2017/07/14/20170714210333000000_1_377706_11.jpg);
 }
 
-#mid {
+.jumbotron#mid {
   background-image: url(https://i.pinimg.com/originals/0e/9e/c0/0e9ec0f858640a0821b3c13cc56d7918.jpg);
   padding: 200px 0px;
 }
@@ -108,38 +144,50 @@ section hr {
   margin-bottom: 20px;
 }
 
-section#section_legend {
+section#Legend {
   background-color: #513B63;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: self-start;
+      -ms-flex-align: self-start;
+          align-items: self-start;
 }
 
-section#section_legend .col-md-5 {
+section#Legend .legend_Img {
   background-image: url(https://inews.gtimg.com/newsapp_bt/0/4077947003/1000);
-  width: 100%;
-  height: 500px;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  min-height: 500px;
   background-position: 13% center;
   margin-bottom: 20px;
+  margin-left: 40px;
 }
 
-section#section_legend .col-md-7 {
+section#Legend .legend_text {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
   padding: 0px 40px;
 }
 
-section#section_legend hr {
+section#Legend hr {
   margin-left: 10px;
 }
 
-section#section_where {
+section#Where {
   text-align: center;
 }
 
-section#section_where .col-sm-12.map {
+section#Where .col-sm-12.map {
   padding-bottom: 20px;
   width: 250px;
   top: -15px;
 }
 
-section#section_where .container-fluid:before {
+section#Where .container-fluid:before {
   content: "";
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1e/BlankMap-World-v4-Borders.png);
   background-size: cover;
@@ -168,16 +216,16 @@ section#section_where .container-fluid:before {
   width: 250px;
 }
 
-section#section_purpose h1 {
+section#Purpose h1 {
   text-align: center;
 }
 
-section#section_purpose p {
+section#Purpose p {
   text-align: justify;
   padding: 10px 15px;
 }
 
-section#section_purpose .img_warp {
+section#Purpose .img_warp {
   border-radius: 10px;
   width: 220px;
   width: 250px;
@@ -186,22 +234,22 @@ section#section_purpose .img_warp {
   left: -65px;
 }
 
-section#section_attractions {
+section#Attractions {
   background-color: #513B63;
 }
 
-section#section_attractions h1 {
+section#Attractions h1 {
   text-align: center;
   color: #fff;
 }
 
-section#section_attractions .imgwarp {
+section#Attractions .imgwarp {
   max-height: 400px;
   height: 30%;
   overflow: hidden;
 }
 
-section#section_attractions .imgwarp .text {
+section#Attractions .imgwarp .text {
   text-align: center;
   width: 100%;
   position: absolute;
@@ -216,30 +264,30 @@ section#section_attractions .imgwarp .text {
   cursor: pointer;
 }
 
-section#section_attractions .imgwarp .text hr {
+section#Attractions .imgwarp .text hr {
   margin-top: 10px;
   margin-bottom: 8px;
   width: 40px;
   border: solid 1.5px;
 }
 
-section#section_attractions .imgwarp .text p {
+section#Attractions .imgwarp .text p {
   padding: 0;
   margin: 0;
 }
 
-section#section_attractions .imgwarp .text:hover {
+section#Attractions .imgwarp .text:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none;
   background-color: rgba(148, 140, 169, 0.8);
 }
 
-section#section_attractions .imgwarp .text:hover h5 {
+section#Attractions .imgwarp .text:hover h5 {
   color: #FFF4B7;
 }
 
-footer#question {
+footer#Question {
   color: #fff;
   text-align: center;
   background-size: cover;
@@ -250,7 +298,7 @@ footer#question {
   text-shadow: 0 0 10px #222;
 }
 
-footer#question input.form-control {
+footer#Question input.form-control {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
