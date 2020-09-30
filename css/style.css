@@ -288,6 +288,16 @@ section#Purpose .img_warp #sick {
 
 section#Attractions {
   background-color: #513B63;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section#Attractions h1 {
@@ -295,48 +305,49 @@ section#Attractions h1 {
   color: #fff;
 }
 
-section#Attractions .imgwarp {
-  max-height: 400px;
-  height: 30%;
-  overflow: hidden;
+section#Attractions #Carousel {
+  width: 55vw;
+  height: 35vh;
+  position: relative;
 }
 
-section#Attractions .imgwarp .text {
-  text-align: center;
+section#Attractions #Carousel .carousel-inner {
   width: 100%;
+  height: 100%;
+}
+
+section#Attractions #Carousel .carousel-inner .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+section#Attractions #Carousel button.control {
   position: absolute;
-  color: #222;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: rgba(148, 140, 169, 0.6);
-  padding: 10px;
-  color: #fff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 1.25rem;
   cursor: pointer;
 }
 
-section#Attractions .imgwarp .text hr {
-  margin-top: 10px;
-  margin-bottom: 8px;
-  width: 40px;
-  border: solid 1.5px;
+section#Attractions #Carousel button.control:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-section#Attractions .imgwarp .text p {
-  padding: 0;
-  margin: 0;
+section#Attractions #Carousel button.control i {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-section#Attractions .imgwarp .text:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  text-decoration: none;
-  background-color: rgba(148, 140, 169, 0.8);
-}
-
-section#Attractions .imgwarp .text:hover h5 {
-  color: #FFF4B7;
+section#Attractions #Carousel button[data-slide="next"] {
+  left: initial;
+  right: 0;
 }
 
 footer#Question {
