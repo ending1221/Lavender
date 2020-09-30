@@ -115,7 +115,7 @@ section {
 section h1 {
   font-size: 28px;
   letter-spacing: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 section h4 {
@@ -181,13 +181,7 @@ section#Where {
   text-align: center;
 }
 
-section#Where .col-sm-12.map {
-  padding-bottom: 20px;
-  width: 250px;
-  top: -15px;
-}
-
-section#Where .container-fluid:before {
+section#Where:before {
   content: "";
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1e/BlankMap-World-v4-Borders.png);
   background-size: cover;
@@ -201,13 +195,41 @@ section#Where .container-fluid:before {
   z-index: -1;
 }
 
+section#Where ul {
+  padding: 0;
+}
+
+section#Where ul li {
+  list-style: none;
+}
+
+section#Where h4 {
+  margin: 0;
+  margin-top: 10px;
+}
+
+section#Where .group {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#Where .group .item {
+  padding: 0 20px;
+}
+
 .img_warp {
   width: 150px;
   height: 150px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 15px;
-  margin-bottom: 10px;
   border-radius: 100%;
   overflow: hidden;
 }
@@ -225,11 +247,41 @@ section#Purpose p {
   padding: 10px 15px;
 }
 
+section#Purpose .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 50px;
+}
+
+section#Purpose .group .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 250px;
+}
+
+section#Purpose .group .item h4 {
+  margin-bottom: 0;
+}
+
 section#Purpose .img_warp {
   border-radius: 10px;
+}
+
+section#Purpose .img_warp img {
   width: 220px;
+}
+
+section#Purpose .img_warp #tea {
   width: 250px;
   left: -80px;
+}
+
+section#Purpose .img_warp #sick {
   width: 250px;
   left: -65px;
 }

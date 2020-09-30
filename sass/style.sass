@@ -98,7 +98,7 @@ section
     h1
         font-size: 28px
         letter-spacing: 2px
-        margin-bottom: 10px
+        margin-bottom: 15px
     h4
         font-size: 22px
         letter-spacing: 1px
@@ -140,15 +140,9 @@ section#Legend
     
 
       
-      
 section#Where 
     text-align: center
-    .col-sm-12.map
-        padding-bottom: 20px
-        .imgwarp img
-        width: 250px
-        top: -15px
-    .container-fluid:before
+    &:before
         content: ""
         background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1e/BlankMap-World-v4-Borders.png)
         background-size: cover
@@ -161,13 +155,31 @@ section#Where
         mix-blend-mode: multiply
         z-index: -1
 
+    ul
+        padding: 0
+
+        li
+            list-style: none
+    
+    h4
+        margin: 0
+        margin-top: 10px
+
+    .group
+        padding: 20px 0
+        display: flex
+        flex-wrap: nowrap
+        justify-content: center
+        .item 
+            padding: 0 20px
+    
+
 .img_warp
     width: 150px
     height: 150px
     margin-right: auto
     margin-left: auto
     margin-top: 15px
-    margin-bottom: 10px
     border-radius: 100%
     overflow: hidden
     img
@@ -179,16 +191,25 @@ section#Purpose
     p
         text-align: justify
         padding: 10px 15px
+    .group 
+        display: flex
+        justify-content: center
+        padding: 0 50px
+        .item
+            flex: 1
+            max-width: 250px
+            h4
+                margin-bottom: 0
     .img_warp
         border-radius: 10px
         img
-        width: 220px
+            width: 220px
         #tea
-        width: 250px
-        left: -80px
+            width: 250px
+            left: -80px
         #sick
-        width: 250px
-        left: -65px
+            width: 250px
+            left: -65px
 
 
 section#Attractions
