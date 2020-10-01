@@ -6,6 +6,12 @@
 
 html, body {
   margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -60,7 +66,7 @@ header.navbar ul {
 
 header.navbar li {
   list-style: none;
-  margin-left: 10px;
+  margin-left: 25px;
 }
 
 .chang_color {
@@ -306,19 +312,70 @@ section#Attractions h1 {
 }
 
 section#Attractions #Carousel {
-  width: 55vw;
-  height: 35vh;
+  width: 650px;
+  height: 350px;
   position: relative;
+}
+
+section#Attractions #Carousel button {
+  z-index: 5;
+  outline: none;
 }
 
 section#Attractions #Carousel .carousel-inner {
   width: 100%;
   height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 section#Attractions #Carousel .carousel-inner .carousel-item {
   width: 100%;
   height: 100%;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section#Attractions #Carousel .carousel-inner .carousel-item img {
+  width: 100%;
+}
+
+section#Attractions #Carousel .carousel-inner .carousel-item .text {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  color: #222;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(148, 140, 169, 0.6);
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+section#Attractions #Carousel .carousel-inner .carousel-item .text h5 {
+  font-size: 1.25rem;
+  margin: 20px 0 10px 0;
+}
+
+section#Attractions #Carousel .carousel-inner .carousel-item .text p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+section#Attractions #Carousel .carousel-inner .carousel-item .text:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgba(148, 140, 169, 0.8);
+}
+
+section#Attractions #Carousel .carousel-inner .carousel-item .text:hover h5 {
+  color: #FFF4B7;
 }
 
 section#Attractions #Carousel button.control {

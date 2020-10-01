@@ -35,19 +35,59 @@ const AttractionsData = [{
 	name: '九族文化村',
 	other: '南投縣魚池鄉金天巷45號 / 04-92895361'
 }]
-let html = ''
-AttractionsData.map((item, i) => {
-	html += `
-	<div class="carousel-item" data-index="${i}">
-		<img src="${item.src}" alt="園區照片"/>
-		<a class="text" href="${item.href}" target="_blank">
-			<h5>${item.name}</h5>
-			<hr/>
-			<p>${item.other}</p>
-		</a>
- 	</div>`
-})
-console.log(html)
+
+class Carousel {
+	constructor(data, $block) {
+		this.data = data
+		this.$inner = $block.find('#Carousel .carousel-inner');
+		this.showItem()
+		this.changePage()
+	}
+	getHtml() {
+		let html = ''
+		this.data.map((item, i) => {
+			html += `
+			<div class="carousel-item" data-index="${i}">
+				<img src="${item.src}" alt="園區照片"/>
+				<a class="text" href="${item.href}" target="_blank">
+					<h5>${item.name}</h5>
+					<p>${item.other}</p>
+				</a>
+			</div>`
+		})
+		return html
+	}
+
+	showItem() {
+		this.$inner.html(this.getHtml())
+	}
+	changePage() {
+		let page = 0;
+		let length = this.data.length - 1
+		console.log(length)
+		$("#Carousel button").on('click', function(){
+			// if ()
+			let slide = $(this).data('slide')
+			if(slide==='next') {
+				page += 1;
+				if(page > length){
+					page = 0;
+				}
+				$("#Carousel .carousel-item").css("left","-"+page*100+"%");
+			}else {
+				page -= 1;
+				if(page < 0){
+					page = length;
+				}
+				$("#Carousel .carousel-item").css("left","-"+page*100+"%");
+			}
+
+			
+		});
+	}
+}
+
+const carousel = new Carousel(AttractionsData, $('#Attractions'))
 
 // <div class="carousel-inner">
 // 	<div class="carousel-item active">
