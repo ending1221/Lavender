@@ -315,11 +315,14 @@ section#Attractions #Carousel {
   width: 650px;
   height: 350px;
   position: relative;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 section#Attractions #Carousel button {
   z-index: 5;
   outline: none;
+  padding: 20px;
 }
 
 section#Attractions #Carousel .carousel-inner {
@@ -327,6 +330,7 @@ section#Attractions #Carousel .carousel-inner {
   height: 100%;
   white-space: nowrap;
   overflow: hidden;
+  word-spacing: -1em;
 }
 
 section#Attractions #Carousel .carousel-inner .carousel-item {
@@ -336,10 +340,13 @@ section#Attractions #Carousel .carousel-inner .carousel-item {
   position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin: 0;
+  word-spacing: 0;
 }
 
 section#Attractions #Carousel .carousel-inner .carousel-item img {
   width: 100%;
+  height: 100%;
 }
 
 section#Attractions #Carousel .carousel-inner .carousel-item .text {
