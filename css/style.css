@@ -342,6 +342,7 @@ section#Attractions #Carousel .carousel-inner .carousel-item {
   transition: 0.5s;
   margin: 0;
   word-spacing: 0;
+  left: 0;
 }
 
 section#Attractions #Carousel .carousel-inner .carousel-item img {
