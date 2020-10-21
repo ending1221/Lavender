@@ -106,7 +106,7 @@ header.navbar li {
 }
 
 .jumbotron#index {
-  background-image: url(http://oushidai.wangdk.cn/static/upload/2017/07/14/20170714210333000000_1_377706_11.jpg);
+  background-image: url("./img/index.jpg");
 }
 
 .jumbotron#mid {
