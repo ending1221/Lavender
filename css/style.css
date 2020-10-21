@@ -106,11 +106,11 @@ header.navbar li {
 }
 
 .jumbotron#index {
-  background-image: url(../img/index.jpg);
+  background-image: url(../img/index.jpg) !important;
 }
 
 .jumbotron#mid {
-  background-image: url(https://i.pinimg.com/originals/0e/9e/c0/0e9ec0f858640a0821b3c13cc56d7918.jpg);
+  background-image: url(../img/mid.jpg) !important;
   padding: 200px 0px;
 }
 
@@ -162,7 +162,7 @@ section#Legend {
 }
 
 section#Legend .legend_Img {
-  background-image: url(https://inews.gtimg.com/newsapp_bt/0/4077947003/1000);
+  background-image: url(../img/01.png) !important;
   -webkit-box-flex: 5;
       -ms-flex: 5;
           flex: 5;
@@ -189,7 +189,7 @@ section#Where {
 
 section#Where:before {
   content: "";
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1e/BlankMap-World-v4-Borders.png);
+  background-image: url(../img/map.png) !important;
   background-size: cover;
   opacity: 0.15;
   height: 450px;
@@ -421,7 +421,7 @@ footer#Question {
   background-size: cover;
   background-attachment: fixed bottom;
   background-position: 0 100%;
-  background-image: url(http://oushidai.wangdk.cn/static/upload/2017/07/14/20170714210333000000_1_377706_11.jpg);
+  background-image: url(../img/index.jpg) !important;
   padding: 80px 0px;
   text-shadow: 0 0 10px #222;
   display: -webkit-box;
