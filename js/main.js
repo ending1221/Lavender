@@ -19,27 +19,27 @@ $(document).on('click','a',function(event){
 
 
 const AttractionsData = [{
-	src: '../img/carousel01.jpg',
+	src: 'img/carousel01.jpg',
 	href: 'https://www.lavendercottage.com.tw/',
 	name: '薰衣草森林(台中新社店)',
 	other: '台中市新社區中和村中興街20號 / 04-25931066'
 },{
-	src: '../img/carousel02.jpg',
+	src: 'img/carousel02.jpg',
 	href: 'https://www.graceme.com.tw/',
 	name: '葛瑞絲香草田',
 	other: '苗栗縣頭屋鄉明德路156號12鄰 / 037-251893'
 },{
-	src: '../img/carousel03.jpg',
+	src: 'img/carousel03.jpg',
 	href: 'https://www.facebook.com/nanyuan6990726',
 	name: '南元花園休閒農場',
 	other: '苗栗縣頭屋鄉明德路156號12鄰 / 037-251893'
 },{
-	src: '../img/carousel04.jpg',
+	src: 'img/carousel04.jpg',
 	href: 'http://www.flowerhome.com.tw/',
 	name: '花露休閒農場',
 	other: '苗栗縣卓蘭鎮西坪里西坪43-3號 / 04-25891589'
 },{
-	src: '../img/carousel05.jpg',
+	src: 'img/carousel05.jpg',
 	href: 'https://www.nine.com.tw/',
 	name: '九族文化村',
 	other: '南投縣魚池鄉金天巷45號 / 04-92895361'
