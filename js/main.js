@@ -99,3 +99,8 @@ class Carousel {
 
 const carousel = new Carousel(AttractionsData, $('section#Attractions'))
 
+$('.navbar-menu').click(function(){
+	$(this).toggleClass('open');
+	$(".navbar").toggleClass('open');
+	$(".navbar-nav").toggleClass('open');
+})
