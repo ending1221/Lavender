@@ -271,6 +271,8 @@ section#Legend
     color: #fff
     display: flex
     align-items: self-start
+    @include mobile 
+        flex-direction: column
     .legend
         &_Img
             background-image: url(../img/01.png) !important
@@ -279,12 +281,22 @@ section#Legend
             background-position: 13% center
             margin-bottom: 20px
             margin-left: 40px
+
+            @include mobile 
+                width: 100vw
+                margin-left: 0
         &_text
             flex: 7
             padding: 0px 40px
     hr
         margin-left: 10px
     
+    
+    @include mobile 
+        h1, hr
+            text-align: center
+        hr 
+            margin: auto
 
       
 section#Where 
@@ -319,6 +331,19 @@ section#Where
         justify-content: center
         .item 
             padding: 0 20px
+    @include mobile 
+        p
+            width: 85%
+            margin-left: auto
+            margin-right: auto
+        .group
+            flex-wrap: wrap
+            li  
+                width: 30%
+                padding: 25px 20px
+            
+
+        
     
 
 .img_warp
@@ -342,11 +367,23 @@ section#Purpose
         display: flex
         justify-content: center
         padding: 0 50px
+        @include mobile 
+            flex-direction: column
         .item
             flex: 1
             max-width: 250px
+            @include mobile 
+                max-width: 100%
+                display: flex
+                h4
+                    margin-top: auto
+                p
+                    width: 50%
             h4
                 margin-bottom: 0
+                @include mobile 
+                    margin-bottom: auto
+
     .img_warp
         border-radius: 10px
         img
@@ -374,6 +411,8 @@ section#Attractions
         position: relative
         border-radius: 15px
         overflow: hidden
+        @include mobile
+            width: 100vw
 
         button
             z-index: 5

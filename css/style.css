@@ -335,6 +335,15 @@ section#Legend {
           align-items: self-start;
 }
 
+@media (max-width: 768px) {
+  section#Legend {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 section#Legend .legend_Img {
   background-image: url(../img/01.png) !important;
   -webkit-box-flex: 5;
@@ -346,6 +355,13 @@ section#Legend .legend_Img {
   margin-left: 40px;
 }
 
+@media (max-width: 768px) {
+  section#Legend .legend_Img {
+    width: 100vw;
+    margin-left: 0;
+  }
+}
+
 section#Legend .legend_text {
   -webkit-box-flex: 7;
       -ms-flex: 7;
@@ -355,6 +371,15 @@ section#Legend .legend_text {
 
 section#Legend hr {
   margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  section#Legend h1, section#Legend hr {
+    text-align: center;
+  }
+  section#Legend hr {
+    margin: auto;
+  }
 }
 
 section#Where {
@@ -404,6 +429,22 @@ section#Where .group .item {
   padding: 0 20px;
 }
 
+@media (max-width: 768px) {
+  section#Where p {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section#Where .group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section#Where .group li {
+    width: 30%;
+    padding: 25px 20px;
+  }
+}
+
 .img_warp {
   width: 150px;
   height: 150px;
@@ -437,6 +478,15 @@ section#Purpose .group {
   padding: 0 50px;
 }
 
+@media (max-width: 768px) {
+  section#Purpose .group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 section#Purpose .group .item {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -444,8 +494,29 @@ section#Purpose .group .item {
   max-width: 250px;
 }
 
+@media (max-width: 768px) {
+  section#Purpose .group .item {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section#Purpose .group .item h4 {
+    margin-top: auto;
+  }
+  section#Purpose .group .item p {
+    width: 50%;
+  }
+}
+
 section#Purpose .group .item h4 {
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  section#Purpose .group .item h4 {
+    margin-bottom: auto;
+  }
 }
 
 section#Purpose .img_warp {
@@ -491,6 +562,12 @@ section#Attractions #Carousel {
   position: relative;
   border-radius: 15px;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  section#Attractions #Carousel {
+    width: 100vw;
+  }
 }
 
 section#Attractions #Carousel button {
