@@ -39,6 +39,23 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
 
 .navbar.open
     background-color: rgba(148, 140, 169, 0.8)
+    flex-wrap: wrap
+    .navbar-nav
+        display: block
+        width: calc(100% + 40px)
+        height: auto
+        margin: -20px
+        margin-top: 1rem
+        li 
+            width: 100%
+            text-align: center
+            padding: 1rem .5rem
+            margin: 0
+            background-color: rgba(148, 140, 169, 0.8);
+            border-top: rgba(#fff,0.6) solid 1px
+            a
+                display: block
+                
 header.navbar
     position: fixed
     top: 0
@@ -70,8 +87,7 @@ header.navbar
         transition: 0.5s
 
         @include mobile 
-            // display: none
-            height: 0
+            display: none
             overflow: hidden
             transition-delay: .5s
         
@@ -155,22 +171,6 @@ header.navbar
                     top: 2rem
                     left: 15%
                     transition-delay: .25s
-    
-    .navbar-nav.open
-        display: block
-        width: 100%
-        height: auto
-        position: absolute
-        top: 60px
-        left: 0
-        background-color: rgba(148, 140, 169, 0.8);
-
-        li 
-            text-align: center
-            padding: 1rem .5rem
-            margin: 0
-            background-color: rgba(148, 140, 169, 0.8);
-            border-top: rgba(#fff,0.6) solid 1px
 
 
     .navbar-menu.open 
