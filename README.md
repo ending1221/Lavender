@@ -1,5 +1,6 @@
 # Lavender
 jQuery / skrollr.js / SASS
+<br>
 原使用 bootstrap 製作，已更新為純使用jQuery，並加上基礎RWD。
 
 ## DEMO
