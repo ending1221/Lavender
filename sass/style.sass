@@ -214,6 +214,8 @@ header.navbar
     background-position: 0% 100%
     margin-bottom: 0px
     border-radius: 0px
+    @include mobile 
+        background-position: 0%
     .container
         color: white
         padding: 300px 0px
@@ -269,6 +271,7 @@ section#Legend
     color: #fff
     display: flex
     align-items: self-start
+    position: relative
     @include mobile 
         flex-direction: column
     .legend
@@ -283,6 +286,11 @@ section#Legend
             @include mobile 
                 width: 100vw
                 margin-left: 0
+                position: absolute
+                opacity: 0.3
+                left: 0
+                bottom: 0
+                box-shadow: 0 0 3rem 2rem $color_purple_2 inset
         &_text
             flex: 7
             padding: 0px 40px
@@ -334,10 +342,10 @@ section#Where
             width: 85%
             margin-left: auto
             margin-right: auto
+            text-align: left
         .group
             flex-wrap: wrap
             li  
-                width: 30%
                 padding: 25px 20px
             
 
@@ -345,15 +353,20 @@ section#Where
     
 
 .img_warp
-    width: 150px
-    height: 150px
+    width: 15vw
+    height: 15vw
     margin-right: auto
     margin-left: auto
     margin-top: 15px
     border-radius: 100%
     overflow: hidden
+
+    @include mobile 
+        width: 9rem
+        height: 9rem
     img
-        width: 250px
+        // object-fit: cover
+        height: 110%
       
 section#Purpose
     h1
@@ -366,26 +379,29 @@ section#Purpose
         justify-content: center
         padding: 0 50px
         @include mobile 
-            flex-direction: column
+            // width: 100%
+            // flex-direction: column
+            flex-wrap: wrap
         .item
-            flex: 1
             max-width: 250px
             @include mobile 
+                width: 100%
                 max-width: 100%
-                display: flex
-                h4
-                    margin-top: auto
                 p
-                    width: 50%
+                    width: 80%
+                    margin-right: auto
+                    margin-left: auto
+
             h4
                 margin-bottom: 0
-                @include mobile 
-                    margin-bottom: auto
 
     .img_warp
         border-radius: 10px
         img
             width: 220px
+            @include mobile 
+                width: 100%
+                // height: 50vw
         #tea
             width: 250px
             left: -80px
@@ -411,6 +427,8 @@ section#Attractions
         overflow: hidden
         @include mobile
             width: 100vw
+            height: auto
+            border-radius: 0
 
         button
             z-index: 5
