@@ -1,4 +1,4 @@
-var s = skrollr.init();
+var s = document.body.clientWidth < 768 ? '' : skrollr.init();
 
 $(window).scroll(function(){
   if($(window).scrollTop()>0){
