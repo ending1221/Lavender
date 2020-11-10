@@ -620,6 +620,7 @@ section#Attractions #Carousel .carousel-inner .carousel-item {
   width: 100%;
   height: 100%;
   display: inline-block;
+  overflow: hidden;
   position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -629,10 +630,9 @@ section#Attractions #Carousel .carousel-inner .carousel-item {
 }
 
 section#Attractions #Carousel .carousel-inner .carousel-item img {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 100%;
 }
 
 section#Attractions #Carousel .carousel-inner .carousel-item .text {
