@@ -103,6 +103,7 @@ header.navbar .navbar-nav {
 
 header.navbar .navbar-nav li {
   list-style: none;
+  margin: .5rem;
 }
 
 header.navbar .navbar-menu {
@@ -482,6 +483,8 @@ section#Where .group .item {
   margin-top: 15px;
   border-radius: 100%;
   overflow: hidden;
+  max-width: 250px;
+  max-height: 250px;
 }
 
 @media (max-width: 768px) {
@@ -586,7 +589,7 @@ section#Attractions #Carousel {
 
 @media (max-width: 768px) {
   section#Attractions #Carousel {
-    width: 100vw;
+    width: 100%;
     height: calc(100vw*0.67);
     border-radius: 0;
   }
@@ -609,6 +612,7 @@ section#Attractions #Carousel .carousel-inner {
 @media (max-width: 768px) {
   section#Attractions #Carousel .carousel-inner {
     word-spacing: 0;
+    font-size: 0;
   }
 }
 
@@ -629,6 +633,7 @@ section#Attractions #Carousel .carousel-inner .carousel-item img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 
 section#Attractions #Carousel .carousel-inner .carousel-item .text {

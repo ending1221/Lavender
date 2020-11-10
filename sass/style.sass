@@ -92,6 +92,7 @@ header.navbar
             transition-delay: .5s
         li
             list-style: none
+            margin: .5rem
         
     .navbar-menu 
         display: none
@@ -368,6 +369,8 @@ section#Where
     margin-top: 15px
     border-radius: 100%
     overflow: hidden
+    max-width: 250px
+    max-height: 250px
 
     @include mobile 
         width: 9rem
@@ -429,7 +432,7 @@ section#Attractions
         border-radius: 15px
         overflow: hidden
         @include mobile
-            width: 100vw
+            width: 100%
             height: calc(100vw*0.67)
             border-radius: 0
 
@@ -446,6 +449,7 @@ section#Attractions
             word-spacing: -1em
             @include mobile
                 word-spacing: 0
+                font-size: 0
 
             .carousel-item
                 width: 100%
@@ -461,6 +465,7 @@ section#Attractions
                 img
                     object-fit: cover
                     width: 100%
+                    height: 100%
 
                 .text
                     text-align: center
