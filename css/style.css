@@ -608,8 +608,7 @@ section#Attractions #Carousel .carousel-inner {
 
 @media (max-width: 768px) {
   section#Attractions #Carousel .carousel-inner {
-    width: 100vw;
-    height: calc(100vw*0.67);
+    word-spacing: 0;
   }
 }
 
@@ -624,13 +623,6 @@ section#Attractions #Carousel .carousel-inner .carousel-item {
   margin: 0;
   word-spacing: 0;
   left: 0;
-}
-
-@media (max-width: 768px) {
-  section#Attractions #Carousel .carousel-inner .carousel-item {
-    width: 100vw;
-    height: calc(100vw*0.67);
-  }
 }
 
 section#Attractions #Carousel .carousel-inner .carousel-item img {
