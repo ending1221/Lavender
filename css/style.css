@@ -272,7 +272,7 @@ header.navbar .navbar-menu.open #cross span:nth-child(2) {
 
 .jumbotron .container {
   color: white;
-  padding: 300px 0px;
+  padding: 300px 20px;
   text-shadow: 0 0 10px #222;
   letter-spacing: 1px;
 }
@@ -450,7 +450,12 @@ section#Where .group .item {
   padding: 0 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 100%;
+}
+
+@media (max-width: 768px) {
+  section#Where .group .item {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -518,12 +523,14 @@ section#Purpose .group {
 
 section#Purpose .group .item {
   max-width: 250px;
+  margin: 1rem;
 }
 
 @media (max-width: 768px) {
   section#Purpose .group .item {
     width: 100%;
     max-width: 100%;
+    margin: .5rem;
   }
   section#Purpose .group .item p {
     width: 80%;
@@ -541,23 +548,13 @@ section#Purpose .img_warp {
 }
 
 section#Purpose .img_warp img {
-  width: 220px;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
   section#Purpose .img_warp img {
     width: 100%;
   }
-}
-
-section#Purpose .img_warp #tea {
-  width: 250px;
-  left: -80px;
-}
-
-section#Purpose .img_warp #sick {
-  width: 250px;
-  left: -65px;
 }
 
 section#Attractions {
@@ -587,6 +584,14 @@ section#Attractions #Carousel {
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  section#Attractions #Carousel {
+    width: 100vw;
+    height: calc(100vw*0.67);
+    border-radius: 0;
+  }
+}
+
 section#Attractions #Carousel button {
   z-index: 5;
   outline: none;
@@ -601,6 +606,13 @@ section#Attractions #Carousel .carousel-inner {
   word-spacing: -1em;
 }
 
+@media (max-width: 768px) {
+  section#Attractions #Carousel .carousel-inner {
+    width: 100vw;
+    height: calc(100vw*0.67);
+  }
+}
+
 section#Attractions #Carousel .carousel-inner .carousel-item {
   width: 100%;
   height: 100%;
@@ -612,6 +624,13 @@ section#Attractions #Carousel .carousel-inner .carousel-item {
   margin: 0;
   word-spacing: 0;
   left: 0;
+}
+
+@media (max-width: 768px) {
+  section#Attractions #Carousel .carousel-inner .carousel-item {
+    width: 100vw;
+    height: calc(100vw*0.67);
+  }
 }
 
 section#Attractions #Carousel .carousel-inner .carousel-item img {
@@ -716,6 +735,12 @@ footer#Question input.form-control {
   border: none;
   border-radius: 5px;
   outline: none;
+}
+
+@media (max-width: 768px) {
+  footer#Question input.form-control {
+    width: 80%;
+  }
 }
 
 footer#Question button {
