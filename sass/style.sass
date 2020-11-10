@@ -215,7 +215,7 @@ header.navbar
     margin-bottom: 0px
     border-radius: 0px
     @include mobile 
-        background-position: 0%
+        background-position: 100%
     .container
         color: white
         padding: 300px 0px
@@ -337,6 +337,8 @@ section#Where
         justify-content: center
         .item 
             padding: 0 20px
+            box-sizing: border-box
+            width: 100%
     @include mobile 
         p
             width: 85%
@@ -442,6 +444,10 @@ section#Attractions
             overflow: hidden
             word-spacing: -1em
 
+            @include mobile
+                width: 100vw
+                height: calc(100vw*0.67)
+
             .carousel-item
                 width: 100%
                 height: 100%
@@ -455,6 +461,7 @@ section#Attractions
                 img
                     width: 100%
                     height: 100%
+                    object-fit: cover
 
                 .text
                     text-align: center
