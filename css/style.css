@@ -625,7 +625,7 @@ section#Attractions #Carousel .carousel-inner .carousel-item {
 section#Attractions #Carousel .carousel-inner .carousel-item img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
+  width: 100%;
 }
 
 section#Attractions #Carousel .carousel-inner .carousel-item .text {
