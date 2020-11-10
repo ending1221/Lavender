@@ -255,6 +255,8 @@ header.navbar .navbar-menu.open #cross span:nth-child(2) {
   text-align: center;
   background-size: cover;
   background-attachment: fixed;
+  top: 0;
+  left: 0;
   background-position: 0% 100%;
   margin-bottom: 0px;
   border-radius: 0px;
@@ -262,7 +264,9 @@ header.navbar .navbar-menu.open #cross span:nth-child(2) {
 
 @media (max-width: 768px) {
   .jumbotron {
-    background-position: 100%;
+    background-position: 50% 75%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
   }
 }
 
