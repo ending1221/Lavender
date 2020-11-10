@@ -433,7 +433,7 @@ section#Attractions
         overflow: hidden
         @include mobile
             width: 100vw
-            height: auto
+            height: calc(100vw*0.67)
             border-radius: 0
 
         button
@@ -447,10 +447,6 @@ section#Attractions
             white-space: nowrap
             overflow: hidden
             word-spacing: -1em
-
-            @include mobile
-                width: 100vw
-                height: calc(100vw*0.67)
 
             .carousel-item
                 width: 100%
