@@ -587,14 +587,6 @@ section#Attractions #Carousel {
   overflow: hidden;
 }
 
-@media (max-width: 768px) {
-  section#Attractions #Carousel {
-    width: 100vw;
-    height: calc(100vw*0.67);
-    border-radius: 0;
-  }
-}
-
 section#Attractions #Carousel button {
   z-index: 5;
   outline: none;
